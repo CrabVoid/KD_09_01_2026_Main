@@ -27,3 +27,4 @@ public class Console {
         return input;
     }
 }
+
