@@ -15,7 +15,7 @@ public class Main {
                 "Ievadiet periodu gados: ", 1, 30, "Periodam jābūt robežās no 1 līdz 30\n"
             );
 
-            var mortgageCalculator = new MortgageCalculator();
+            var mortgageCalculator = new MortgageCalculator(int totalCreditSum, float yearlyPercentageRate, int years);
             System.out.println("Ikmēneša maksājums: " + mortgageCalculator.calculate(totalCreditSum, yearlyPercentageRate, years) + " EUR");
 
             if (Console.readInput("Vai vēlaties turpināt? Jā[1]/Nē[0]: ") == 0)
