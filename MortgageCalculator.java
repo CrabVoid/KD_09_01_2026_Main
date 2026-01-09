@@ -21,7 +21,7 @@ public class MortgageCalculator {
     }
 
     private double getFutureValueInterestFactor() {
-        Math.pow((1 + getMonthlyRate()), getMonths());
+        return Math.pow((1 + getMonthlyRate()), getMonths());
     }
 
     // https://www.luminor.lv/lv/privatpersonam/hipotekara-kredita-kalkulators

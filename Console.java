@@ -10,11 +10,12 @@ public class Console {
 
     public static float readInput(String prompt, int lowLimit, int highLimit, String errorMessage) {
         var scanner = new Scanner(System.in);
+        float input = 0;
         while (true) {
             System.out.print(prompt);
 
             try {
-                float input = scanner.nextFloat();
+                input = scanner.nextFloat();
 
                 if (input <= highLimit && input >= lowLimit)
                     break;
@@ -25,7 +26,6 @@ public class Console {
                 scanner.next(); // Consume the invalid input
             }
         }
-
         return input;
     }
 }
