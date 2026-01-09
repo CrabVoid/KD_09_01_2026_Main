@@ -1,7 +1,7 @@
 public class MortgageCalculator {
-    private credit;
-    private yearlyPercentageRate;
-    private years;
+    private int credit;
+    private float yearlyPercentageRate;
+    private int years;
 
     public final static byte MONTH_IN_YEAR = 12;
     public final static byte PERCENT = 100;
@@ -13,11 +13,11 @@ public class MortgageCalculator {
     }
 
     private int getMonths() {
-        this.years * MONTH_IN_YEAR;
+        years * MONTH_IN_YEAR;
     }
 
     private float getMonthlyRate() {
-        this.yearlyPercentageRate / PERCENT / MONTH_IN_YEAR;
+        yearlyPercentageRate / PERCENT / MONTH_IN_YEAR;
     }
 
     private double getFutureValueInterestFactor() {

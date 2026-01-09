@@ -7,14 +7,14 @@ public class Console {
         return scanner.nextFloat();
     }
 
-    public static float readInput(String prompt, int lowLimit, int highLimit) {
+    public static float readInput(String prompt, int lowLimit, int highLimit, String errorMessage) {
         while (true) {
             System.out.print(prompt);
 
             try {
-                input = scanner.nextFloat();
+                float input = scanner.nextFloat();
 
-                if (input >= highLimit && input <= lowLimit)
+                if (input <= highLimit && input >= lowLimit)
                     break;
 
                 System.out.print(errorMessage);
